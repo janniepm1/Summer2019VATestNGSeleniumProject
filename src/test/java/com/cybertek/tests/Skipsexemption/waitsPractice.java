@@ -2,12 +2,15 @@ package com.cybertek.tests.Skipsexemption;
 
 
 import com.cybertek.Utilities.WebDriverFactory;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import javax.xml.datatype.Duration;
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class waitsPractice {
@@ -22,8 +25,11 @@ public class waitsPractice {
     }
 
     @Test
-    public void test1(){
-        String locator="#checkbox>input";
-       // WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20));
+    public void test1() {
+        String locator = "#checkbox > input";
+        WebDriverWait wait = new WebDriverWait(driver, (20));
+//        wait.until(ExpectedConditions.visibilityOf());
+//        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.cssSelector(locator)));
+//    }
     }
 }

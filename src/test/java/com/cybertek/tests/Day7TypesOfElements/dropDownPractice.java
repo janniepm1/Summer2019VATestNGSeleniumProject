@@ -1,4 +1,4 @@
-package com.cybertek.tests;
+package com.cybertek.tests.Day7TypesOfElements;
 
 import com.cybertek.Utilities.StringUtility;
 import com.cybertek.Utilities.WebDriverFactory;
